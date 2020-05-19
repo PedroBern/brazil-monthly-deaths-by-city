@@ -1,0 +1,7 @@
+include LICENSE
+include MANIFEST.in
+include README.rst
+recursive-include brazil_monthly_deaths/data *
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
