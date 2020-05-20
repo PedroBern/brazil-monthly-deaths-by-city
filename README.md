@@ -2,6 +2,11 @@
 
 Web Scraping Package of Brazil Deaths.
 
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square)](https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/)
+[![Build Status](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city.svg?branch=master)](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city)
+[![Pypi](https://img.shields.io/pypi/v/brazil-monthly-deaths-by-city.svg)](https://pypi.org/project/brazil-monthly-deaths-by-city/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pedrobern/brazil-monthly-deaths-by-city/blob/master/CONTRIBUTING.md)
+
 ## Installation
 
 First install the package:
