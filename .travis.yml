@@ -35,6 +35,5 @@ jobs:
         on:
           tags: true
           branch: master
-        password:
-          secure: c8Uji09i8T3jlUfYuWgqpxfKKQi2I3zuh+U03bjvqOSCZ38gRtZm4+OnA6CWMvTiL5c7ePYKinIaqTBYSB/fmmDBGrBosiZPM7LweEOHtlK+zbM8DE2hqiGJOs968e7JA1tItTCBnyBtGeyXE2YrXjbk1YkSkRBz/dSxw3doToBJXVANw3Dv7A/WBj4i0bHscsYchC4uHGNDX4uAqKFM1asPDwcOkCWMzn1/iAoBMaq5nImgYIC3ni+2+I2hExgzz3VUzv+OXU2DPb9+5y1Vp01kvqhNOMlu9pfmAU4aOxswAgt3EM+xCcGiwlGt5vn8JkhasSznOCcz1m7PH70ZefwlQu+WWQJdHHR+2PzY05FSMxEYdarnlQzkJENHPKyiP5Hpe6mx/FWL7zF4LPBOb5BQwOpg6KwXjE40r1knsUShrORUJ2KJtjg2/4a/MfbKcIeRaMvFxuzsbJK6CpuZTjkaW9ebfGvoVonQRdTTkkBJ9CH9b+OCNRhjSC/fs11lVyg3LJ80cBMfQ3qB1HpkrbRdSTISmwiw/bF8di1GHQYHnpb2rUWf9wGTgs+OPIjbTTJGSmLiAi6J3Atlw/C9b6ZZeHpMwjka4Mh1KcbsWBbgixw8/2qGrYmyVyNdkWerZtnei4VkTIomf6d1WhsgC0d89EiFG6PFdB89BwZSkho=
-        distributions: sdist bdist_wheel
+          password:
+            secure: SlrGscNHmEAzE+FdRdCCE1SW7Vl4/Hy6+CO9IJLEwWCPbv+1QOQgrZ8dSyOyeOAtL0yJokz8ieIy1WgMKytY+Bao0lQ6WV2kcSxmt9v7GxZskIfXIsOQ26W/jbhAWvr2uRhCVMZOSswbOLJjbbzAfD62N/3iw/O0qDvJsm6j/1ZidS8HZYWZ+DOT1dRHpH3lk/x5ca2Z03pPGe78zLOmrv3t0Y4Ye9jY/sd9LN/aMjQzAKvN1u887VzkPodvlWPmcSbfkD/FY1N4Wg8NX25yopF/pS/i/Kza3mF9asBVFGYxIW/VuzdXfCaeMk6eUcOj52f5+pWt+FLnfEr2mVYnFT+/VvtEpCsRtzWgwUATct5Z0hGbESo3So2TNitubEyttOGT2fZcG33YckHi7BY00DwrW+cOISG7e0B5mziHuLRq8cMobN5RKVuqDn6jK8Ex9PAxXwFWGTHCCKnTrhNBbpciwNjVuXLuHFJhi4F5DJgEYRjLLNTqchp8X8WT5lNSh6rfnhm7PKIY4Mt8tXwayBJSdCxP31XvqDPRNsrrG2+Erh20gsFKQkuD7iLEXqKDqXJB9VgwkqR7aIsHounueG61XY1F3+BQH9aWkWLUaf1K9VX3o0zmSkQellbBxaela4vYqi7SAox/wRehRSTN9zNEbsZ32L6r/EGMoJpJKs4=
