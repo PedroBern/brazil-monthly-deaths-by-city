@@ -3,6 +3,8 @@ Brazil Monthly Deaths by City
 
 Web Scraping Package of Brazil Deaths.
 
+|Pypi| |Build Status| |Codecov|
+
 Installation
 ------------
 
@@ -10,7 +12,7 @@ First install the package:
 
 .. code:: bash
 
-    pip install brazil_monthly_deaths
+    pip install brazil-monthly-deaths
 
 Then install the chrome driver in order to use selenium, you can see
 more information in the `selenium
@@ -173,3 +175,15 @@ Registry Offices website to update the data provided in this package.
 It basically put the new data below the old data in the dataframe, then
 remove the duplicates (excluding deaths) keeping the most recent
 entries.
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/brazil-monthly-deaths.svg
+   :target: https://pypi.org/project/brazil-monthly-deaths/
+   :alt: Pypi
+
+.. |Build Status| image:: https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city.svg?branch=master
+   :target: https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city
+   :alt: Build Status
+
+.. |Codecov| image:: https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square
+   :target: https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/
+   :alt: Codecov
