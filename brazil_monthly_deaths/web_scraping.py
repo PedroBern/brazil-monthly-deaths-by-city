@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
-import numpy
+import numpy as np
 import pandas as pd
 
 from .exceptions import WrongInput
@@ -196,7 +196,7 @@ def brazil_deaths(
     regions=_regions_names,
     states=_states,
     filename="data",
-    return_df=False,
+    return_df=True,
     save_csv=True,
     verbose=True,
     *args,
@@ -232,7 +232,7 @@ def brazil_deaths(
     open_page()
     select_deaths()
     if return_df:
-        combined_df = pd.DataFrame()
+        combined_df = pd.DataFrame(columns=header)
     for year in years:
         if verbose:
             print("year:", year)
@@ -275,14 +275,18 @@ def brazil_deaths(
                             ]
                         )
         if len(year_data) > 0:
-            df = pd.DataFrame(numpy.asarray(year_data))
+            df = pd.DataFrame(np.asarray(year_data), columns=header)
             if save_csv:
                 save_data(df, str(year), filename=filename, *args, **kwargs)
             if return_df:
-                combined_df.append(df)
+                combined_df = combined_df.append(df)
     browser.quit()
     if return_df:
         if len(combined_df) > 0:
+            combined_df["city_id"] = pd.to_numeric(combined_df["city_id"])
+            combined_df["year"] = pd.to_numeric(combined_df["year"])
+            combined_df["month"] = pd.to_numeric(combined_df["month"])
+            combined_df["deaths"] = pd.to_numeric(combined_df["deaths"])
             return combined_df
         else:
             return None
