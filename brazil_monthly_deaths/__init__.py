@@ -8,12 +8,12 @@ from .dataframes import (
     data,
 )
 from .update_new_data import update_df
-from .web_scraping import brazil_deaths, city_id
+from .web_scraping import brazil_deaths, get_city_id
 
 __all__ = [
     "brazil_deaths",
     "update_df",
-    "city_id",
+    "get_city_id",
     "data_2015",
     "data_2016",
     "data_2017",

@@ -184,16 +184,16 @@ remove the duplicates (excluding deaths) keeping the most recent
 entries.
 
 
-city\_id
-~~~~~~~~
+get\_city\_id
+~~~~~~~~~~~~~
 
 Get the unique id of the combination of the ``state`` and ``city``.
 
 .. code:: python
 
-    from brazil_monthly_deaths import city_id
+    from brazil_monthly_deaths import get_city_id
 
-    sao_paulo_id = city_id(state='São Paulo', city='São Paulo')
+    sao_paulo_id = get_city_id(state='São Paulo', city='São Paulo')
 
     print(sao_paulo_id) # 89903871
 
