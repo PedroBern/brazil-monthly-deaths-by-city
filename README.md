@@ -7,6 +7,18 @@ Web Scraping Package of Brazil Deaths.
 [![Pypi](https://img.shields.io/pypi/v/brazil-monthly-deaths.svg)](https://pypi.org/project/brazil-monthly-deaths/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pedrobern/brazil-monthly-deaths-by-city/blob/master/CONTRIBUTING.md)
 
+## Table of Content
+
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Data example](#Data-example)
+- [API](#API)
+  - [Dataframes](#Dataframes)
+  - [brazil_deaths](#brazil-deaths)
+  - [update_df](#update-df)
+
+<div id="Installation"></div>
+
 ## Installation
 
 First install the package:
@@ -16,6 +28,8 @@ pip install brazil-monthly-deaths
 ```
 
 Then install the chrome driver in order to use selenium, you can see more information in the [selenium documentation](https://selenium-python.readthedocs.io/installation.html#drivers) and the [chrome driver download page](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+
+<div id="Usage"></div>
 
 ## Usage
 
@@ -40,6 +54,8 @@ current_data = update_df(data, new_data)
 print(current_data)
 ```
 
+<div id="Data-example"></div>
+
 ## Data example
 
 | city_id  | year | month | region    | state          | city        | deaths |
@@ -53,7 +69,11 @@ print(current_data)
 
 ---
 
+<div id="API"></div>
+
 ## API
+
+<div id="Dataframes"></div>
 
 ### Dataframes
 
@@ -78,6 +98,8 @@ from brazil_monthly_deaths import (
   data_2020 # always out of date, you need to update it
 )
 ```
+
+<div id="brazil-deaths"></div>
 
 ### brazil_deaths
 
@@ -132,6 +154,8 @@ The `_states` is:
 ```
 
 The `*args` and `**kwargs` are passed down to `df.to_csv(..., *args, **kwargs)`
+
+<div id="update-df"></div>
 
 ### update_df
 
