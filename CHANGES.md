@@ -2,6 +2,10 @@
 
 ## v1
 
+### v1.2.0
+
+- Update 2020 data.
+
 ### v1.1.0
 
 - Check if both dataframes have same columns and dtypes before updating in `update_df`.
