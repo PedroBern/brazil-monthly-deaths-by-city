@@ -2,6 +2,10 @@
 
 ## v1
 
+### v1.3.0
+
+- Add `city_id` function to module exports.
+
 ### v1.2.0
 
 - Update 2020 data.

@@ -3,7 +3,8 @@ Brazil Monthly Deaths by City
 
 Web Scraping Package of Brazil Deaths.
 
-|Pypi| |Build Status| |Codecov|
+|Codecov Coverage| |Build Status| |Pypi| |contributions welcome|
+
 
 Installation
 ------------
@@ -19,6 +20,7 @@ more information in the `selenium
 documentation <https://selenium-python.readthedocs.io/installation.html#drivers>`__
 and the `chrome driver download
 page <https://sites.google.com/a/chromium.org/chromedriver/downloads>`__.
+
 
 Usage
 -----
@@ -44,6 +46,7 @@ Usage
     current_data = update_df(data, new_data)
     print(current_data)
 
+
 Data example
 ------------
 
@@ -63,8 +66,10 @@ Data example
 
 --------------
 
+
 API
 ---
+
 
 Dataframes
 ~~~~~~~~~~
@@ -92,6 +97,7 @@ following columns:
       data_2019,
       data_2020 # always out of date, you need to update it
     )
+
 
 brazil\_deaths
 ~~~~~~~~~~~~~~
@@ -159,6 +165,7 @@ The ``_states`` is:
 The ``*args`` and ``**kwargs`` are passed down to
 ``df.to_csv(..., *args, **kwargs)``
 
+
 update\_df
 ~~~~~~~~~~
 
@@ -176,14 +183,25 @@ It basically put the new data below the old data in the dataframe, then
 remove the duplicates (excluding deaths) keeping the most recent
 entries.
 
-.. |Pypi| image:: https://img.shields.io/pypi/v/brazil-monthly-deaths.svg
-   :target: https://pypi.org/project/brazil-monthly-deaths/
-   :alt: Pypi
 
+city\_id
+~~~~~~~~
+
+Get the unique id of the combination of the ``state`` and ``city``.
+
+.. code:: python
+
+    from brazil_monthly_deaths import city_id
+
+    sao_paulo_id = city_id(state='São Paulo', city='São Paulo')
+
+    print(sao_paulo_id) # 89903871
+
+.. |Codecov Coverage| image:: https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square
+   :target: https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/
 .. |Build Status| image:: https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city.svg?branch=master
    :target: https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city
-   :alt: Build Status
-
-.. |Codecov| image:: https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square
-   :target: https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/
-   :alt: Codecov
+.. |Pypi| image:: https://img.shields.io/pypi/v/brazil-monthly-deaths.svg
+   :target: https://pypi.org/project/brazil-monthly-deaths/
+.. |contributions welcome| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+   :target: https://github.com/pedrobern/brazil-monthly-deaths-by-city/blob/master/CONTRIBUTING.md

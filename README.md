@@ -16,6 +16,7 @@ Web Scraping Package of Brazil Deaths.
   - [Dataframes](#Dataframes)
   - [brazil_deaths](#brazil-deaths)
   - [update_df](#update-df)
+  - [city_id](#city-id)
 
 <div id="Installation"></div>
 
@@ -169,3 +170,17 @@ current_data = update_df(data, new_data)
 ```
 
 It basically put the new data below the old data in the dataframe, then remove the duplicates (excluding deaths) keeping the most recent entries.
+
+<div id="city-id"></div>
+
+### city_id
+
+Get the unique id of the combination of the `state` and `city`.
+
+```python
+from brazil_monthly_deaths import city_id
+
+sao_paulo_id = city_id(state='São Paulo', city='São Paulo')
+
+print(sao_paulo_id) # 89903871
+```

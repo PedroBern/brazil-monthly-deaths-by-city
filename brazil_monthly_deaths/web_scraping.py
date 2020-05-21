@@ -184,7 +184,7 @@ def save_data(data, year, filename="data", *args, **kwargs):
     data.to_csv(filename, index=False, header=header, *args, **kwargs)
 
 
-def make_city_id(state, city):
+def city_id(state, city):
     s = state + " " + city
     hash = int(hashlib.sha256(s.encode("utf-8")).hexdigest(), 16) % 10 ** 8
     return hash
@@ -262,7 +262,7 @@ def brazil_deaths(
                         next_p = next_page()
                         page += 1
                     for c, city in enumerate(state_cities):
-                        city_id = make_city_id(state, city)
+                        city_id = city_id(state, city)
                         year_data.append(
                             [
                                 city_id,

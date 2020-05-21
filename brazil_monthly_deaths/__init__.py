@@ -8,11 +8,12 @@ from .dataframes import (
     data,
 )
 from .update_new_data import update_df
-from .web_scraping import brazil_deaths
+from .web_scraping import brazil_deaths, city_id
 
 __all__ = [
     "brazil_deaths",
     "update_df",
+    "city_id",
     "data_2015",
     "data_2016",
     "data_2017",
@@ -22,4 +23,4 @@ __all__ = [
     "data",
 ]
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"
