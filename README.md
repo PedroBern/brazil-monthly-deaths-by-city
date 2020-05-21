@@ -110,7 +110,7 @@ from brazil_monthly_deaths import (
 
 You can use this function to scrap new data directly from the [Civil Registry Offices website](https://transparencia.registrocivil.org.br/registros). Just make sure you have installed the chrome driver, as pointed above.
 
-Oficial note about the legal deadlines:
+Official note about the legal deadlines:
 
 > The family has up to 24 hours after the death to register the death in the Registry, which, in turn, has up to five days to perform the death registration, and then up to eight days to send the act done to the National Information Center of the Civil Registry ( CRC Nacional), which updates this platform.
 

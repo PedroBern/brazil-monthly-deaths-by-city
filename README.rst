@@ -107,7 +107,7 @@ Registry Offices
 website <https://transparencia.registrocivil.org.br/registros>`__. Just
 make sure you have installed the chrome driver, as pointed above.
 
-Oficial note about the legal deadlines:
+Official note about the legal deadlines:
 
     The family has up to 24 hours after the death to register the death
     in the Registry, which, in turn, has up to five days to perform the
