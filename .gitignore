@@ -7,3 +7,4 @@ __pycache__
 *.xml
 build/
 dist/
+*_checkpoints

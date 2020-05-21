@@ -55,6 +55,10 @@ current_data = update_df(data, new_data)
 print(current_data)
 ```
 
+See the [jupyter example](https://github.com/PedroBern/brazil-monthly-deaths-by-city/tree/master/jupyter_example) to generate the following plot:
+
+![plot example](./jupyter_example/plot.png)
+
 <div id="Data-example"></div>
 
 ## Data example
