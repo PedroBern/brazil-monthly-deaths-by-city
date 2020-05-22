@@ -289,6 +289,3 @@ def brazil_deaths(
             return combined_df
         else:
             return None
-
-
-brazil_deaths()
