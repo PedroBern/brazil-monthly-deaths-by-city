@@ -7,6 +7,9 @@ Web Scraping Package of Brazil Deaths.
 [![Pypi](https://img.shields.io/pypi/v/brazil-monthly-deaths.svg)](https://pypi.org/project/brazil-monthly-deaths/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pedrobern/brazil-monthly-deaths-by-city/blob/master/CONTRIBUTING.md)
 
+> :warning: When getting new data, this package will access an official website for new records, but as it is made with web scraping, if the html is updated, this package will no longer work, needing to be updated accordingly. Please if you experience any kind of failure, open an issue.
+
+
 ## Table of Contents
 
 - [Installation](#Installation)
