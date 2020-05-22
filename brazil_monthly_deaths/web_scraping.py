@@ -10,7 +10,7 @@ from selenium.webdriver import ActionChains
 import numpy as np
 import pandas as pd
 
-from exceptions import WrongInput
+from .exceptions import WrongInput
 
 # From where the data comes
 url = "https://transparencia.registrocivil.org.br/registros"
