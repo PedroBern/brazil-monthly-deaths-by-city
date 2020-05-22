@@ -62,6 +62,9 @@ See the [jupyter example](https://github.com/PedroBern/brazil-monthly-deaths-by-
 
 ![plot example](./jupyter_example/plot.png)
 
+The example running:
+
+![demo example](./jupyter_example/demo.gif)
 <div id="Data-example"></div>
 
 ## Data example
