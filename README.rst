@@ -1,7 +1,9 @@
 Brazil Monthly Deaths by City
 =============================
 
-Web Scraping Package of Brazil Deaths.
+This package exports a dataset with deaths number for all cities 
+of Brazil since 2015. In order to obtain the most recent data, 
+it also exports a web scraping function to get data every time you want.
 
 |Codecov Coverage| |Build Status| |Pypi| |contributions welcome|
 

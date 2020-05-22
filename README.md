@@ -1,13 +1,11 @@
 # Brazil Monthly Deaths by City
 
-Web Scraping Package of Brazil Deaths.
+This package exports a dataset with deaths number for all cities of Brazil since 2015. In order to obtain the most recent data, it also exports a web scraping function to get data every time you want.
 
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square)](https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/)
 [![Build Status](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city.svg?branch=master)](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city)
 [![Pypi](https://img.shields.io/pypi/v/brazil-monthly-deaths.svg)](https://pypi.org/project/brazil-monthly-deaths/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pedrobern/brazil-monthly-deaths-by-city/blob/master/CONTRIBUTING.md)
-
-> :warning: :warning: :warning: When getting new data, this package will access an official website for new records, but as it is made with web scraping, if the html is updated, this package will no longer work, needing to be updated accordingly. Please if you experience any kind of failure, open an issue.
 
 
 ## Table of Contents
@@ -25,17 +23,21 @@ Web Scraping Package of Brazil Deaths.
 
 ## Installation
 
-First install the package:
+### To work only with the provided datasets
 
 ```bash
 pip install brazil-monthly-deaths
 ```
 
-Then install the chrome driver in order to use selenium, you can see more information in the [selenium documentation](https://selenium-python.readthedocs.io/installation.html#drivers) and the [chrome driver download page](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+### To get the most recent data
+
+If you want to **get the most recent data**, probably not available on this package, since the deaths numbers change every day, install the chrome driver in order to use selenium, you can see more information in the [selenium documentation](https://selenium-python.readthedocs.io/installation.html#drivers) and the [chrome driver download page](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
 <div id="Usage"></div>
 
 ## Usage
+
+> :warning: When getting new data, this package will access an official website for new records, but as it is made with web scraping, if the html is updated, this package will no longer work, needing to be updated accordingly. Please if you experience any kind of failure, open an issue.
 
 > Assuming you have installed the chrome driver
 
