@@ -10,7 +10,7 @@ from selenium.webdriver import ActionChains
 import numpy as np
 import pandas as pd
 
-from .exceptions import WrongInput
+from exceptions import WrongInput
 
 # From where the data comes
 url = "https://transparencia.registrocivil.org.br/registros"
@@ -79,14 +79,15 @@ _years = [2020, 2019, 2018, 2017, 2016, 2015]
 # the scrip will no longer work and need to be
 # updated accordingly
 year_path = '//fieldset[@id="datePickrGroup"]/div'
-month_path = '//fieldset[@id="__BVID__39"]/div'
-state_path = '//div[@id="__BVID__47"]/div'
+month_path = '//legend[text()="Mês"]/ancestor::fieldset/div'
+state_path = '//label[text()="Estado"]/parent::div/div'
 search_path = '//button[normalize-space()="Pesquisar"]'
 city_name_row_path = "//tbody/tr/td[@aria-colindex=1]"
 city_deaths_row_path = "//tbody/tr/td[@aria-colindex=2]"
 table_id = "__BVID__170"
 next_page_path = '//li/a/span[text()="›"]/ancestor::li'
 empty_table_path = '//tr[@class="b-table-empty-row"]'
+deaths_input_path = '//input[@value="death"]/parent::div'
 
 # pandas df headers
 header = ["city_id", "year", "month", "region", "state", "city", "deaths"]
@@ -104,9 +105,7 @@ def select_deaths():
     """
     select the deaths radio input
     """
-    browser.find_element_by_xpath(
-        '//input[@id="__BVID__30__BV_radio_3_opt_"]/parent::div'
-    ).click()
+    browser.find_element_by_xpath(deaths_input_path).click()
 
 
 def select_field(path, data):
@@ -115,7 +114,7 @@ def select_field(path, data):
     """
     browser.find_element_by_xpath(path).click()
     browser.find_element_by_xpath(
-        path + '/div/div/ul/li/span/span[text()="' + str(data) + '"]/ancestor::li'
+        '//span[text()="' + str(data) + '"]/ancestor::li'
     ).click()
 
 
@@ -290,3 +289,6 @@ def brazil_deaths(
             return combined_df
         else:
             return None
+
+
+brazil_deaths()

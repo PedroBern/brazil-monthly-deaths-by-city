@@ -2,6 +2,10 @@
 
 ## v1
 
+### v1.4.0
+
+- Update web scrap accordingly to website html updates.
+
 ### v1.3.0
 
 - Add `get_city_id` function to module exports.
