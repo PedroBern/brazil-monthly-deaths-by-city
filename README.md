@@ -1,6 +1,6 @@
 # Brazil Monthly Deaths by City
 
-This package exports a dataset with deaths number for all cities of Brazil since 2015. In order to obtain the most recent data, it also exports a web scraping function to get data every time you want.
+This package exports a dataset with deaths number for all cities of Brazil since 2015. To obtain the most recent data, it also exports a web scraping function to get data every time you want.
 
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/pedrobern/brazil-monthly-deaths-by-city/master.svg?style=flat-square)](https://codecov.io/gh/pedrobern/brazil-monthly-deaths-by-city/)
 [![Build Status](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city.svg?branch=master)](https://travis-ci.com/pedrobern/brazil-monthly-deaths-by-city)
